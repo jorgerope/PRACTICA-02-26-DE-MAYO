@@ -3,16 +3,73 @@
 
 // Grids que unifican Figma con Sass
 
-// gridMQ
     // Grid para Smartphone
     @media only screen and (min-width: map-get($breakpoints, smartphone)) and (orientation: portrait) {
-        .contenedor {
-            padding: 0 16px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-column-gap: 16px;
-        }
+        
     }
+
+    header{
+        padding: 16px;
+    }
+main{
+
+    background-color: map-get($colores, gri );
+    border-radius: 30px;
+    padding: 0 0 0 16px;
+}
+   
+    
+    .main{
+
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-column-gap: 16px;
+    
+    
+        
+        
+    }
+            .titulo{
+              
+                grid-column: 1/ span-1;
+                grid-row: 1 / 1;
+            }
+    
+.presentacion{
+   
+    grid-column: 1/ span 3;
+    grid-row: 2 /span 1;
+
+}
+
+
+.trigo{
+    
+    grid-column: 1/ span 2;
+    grid-row:3 /span 1;
+}
+
+.fruta{
+    grid-column:3/ span 2;
+    grid-row: 3 /span 1;
+}
+
+.parrafo{
+    
+    grid-column: 1/ span 4;
+    grid-row: 4 /span 1;
+
+}
+
+.boton{
+    
+    grid-column: 4/ span 1;
+    grid-row: 5 /span 2;
+  
+
+}
 
     // Grid para iPad
     @media only screen and (min-width: map-get($breakpoints, ipad)) and (orientation: portrait) {

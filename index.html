@@ -5,19 +5,99 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        <!-- HEADER -->
+        <!-- <section class="contenedor">      -->
+            
+            <!-- HEADER -->
         <header>
-            <img src="" alt="" />
-            <nav class="menu"></nav>
+          
         </header>
+
+
+
+
         <!-- MAIN -->
-        <main></main>
+        <main>
+            <div class="main">            <h1 class="titulo">Bienvenidos</h1>
+
+            <p class="presentacion">Como si estuvieras en tu casa</p>
+
+             
+           <!-- <section class="imagenes"> -->
+ <!-- img Smartphone & Desktop TRIGO-->
+            <section class="trigo" >
+            <!-- img  TRIGO -->   
+                <picture>
+                    <!-- Mobile First -->
+                    <source
+                        srcset="
+                            ./img/smartphone/TRIGO.jpg 1x,
+                            ./img/smartphone/TRIGO@2x.jpg 2x,
+                            ./img/smartphone/TRIGO@3x.jpg 3x
+                        "
+                        media="(min-width:320px) and (orientation:portrait)"
+                    />
+                    <!-- Desktop -->
+                    <source
+                        srcset="
+                            ./img/desktop/TRIGO.jpp 1x,
+                            ./img/desktop/TRIGO@2x.jpg 2x,
+                           
+                        "
+                        media="(min-width:1000px)"
+                    />
+                    <img src="" alt="trigo" />
+                </picture>
+            </section>
+
+<!-- img  FRUTA -->
+
+            <section class="fruta">
+                <!-- img Smartphone & Desktop -->
+                <picture>
+                    <!-- Mobile First -->
+                    <source
+                        srcset="
+                            ./img/smartphone/FRUTA.jpg    1x,
+                            ./img/smartphone/FRUTA@2x.jpg 2x,
+                            ./img/smartphone/FRUTA@3x.jpg 3x
+                        "
+                        media="(min-width:320px) and (orientation:portrait)"
+                    />
+                    <!-- Desktop -->
+                    <source
+                        srcset="
+                            ./img/desktop/FRUTA.jpp 1x,
+                            ./img/desktop/FRUTA@2x.jpg 2x,
+                           
+                        "
+                        media="(min-width:1000px)"
+                    />
+                    <img  src="" alt="fruta" />
+                </picture>
+            <!-- </section> -->
+        </section>
+<p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perferendis autem exercitationem molestias quaerat, cumque sequi adipisci. Consequuntur, harum deleniti.</p>
+
+<a class="btnLeer" href="">Leer más</a>
+
+           
+        </div>
+
+        </main>
+        
+        
+        
+        
         <!-- FOOTER -->
         <footer>
-            <h6 class="copy">&copy;Copyright</h6>
+            
         </footer>
+    
+    
+    </section>
+ 
     </body>
 </html>
