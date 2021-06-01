@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        <!-- <section class="contenedor">      -->
+        
             
             <!-- HEADER -->
         <header>
@@ -17,19 +17,15 @@
 
 
 
-
         <!-- MAIN -->
         <main>
-            <div class="main">            <h1 class="titulo">Bienvenidos</h1>
+            <div class="contenedor">   
+         <h1 class="contenedor__titulo">Bienvenidos</h1>
 
-            <p class="presentacion">Como si estuvieras en tu casa</p>
+            <p class="contenedor__presentacion">Como si estuvieras en tu casa</p>
 
-             
-           <!-- <section class="imagenes"> -->
- <!-- img Smartphone & Desktop TRIGO-->
-            <section class="trigo" >
-            <!-- img  TRIGO -->   
-                <picture>
+          
+                <picture class="contenedor__trigo">
                     <!-- Mobile First -->
                     <source
                         srcset="
@@ -37,51 +33,48 @@
                             ./img/smartphone/TRIGO@2x.jpg 2x,
                             ./img/smartphone/TRIGO@3x.jpg 3x
                         "
-                        media="(min-width:320px) and (orientation:portrait)"
+                        media="(min-width:300px) and  (max-width:740px) and (orientation:portrait)"
                     />
                     <!-- Desktop -->
                     <source
                         srcset="
-                            ./img/desktop/TRIGO.jpp 1x,
-                            ./img/desktop/TRIGO@2x.jpg 2x,
+                            ./img/desktop/TRIGO.jpg 1x,
+                            ./img/desktop/TRIGO@2x.jpg 2x
                            
                         "
-                        media="(min-width:1000px)"
+                        media="(min-width:1200px)"
                     />
-                    <img src="" alt="trigo" />
-                </picture>
-            </section>
+                    <img class="contenedor__trigo__uno" src="" alt="trigo" />
+                </picture>  
 
-<!-- img  FRUTA -->
-
-            <section class="fruta">
+            <picture class="contenedor__fruta">
                 <!-- img Smartphone & Desktop -->
-                <picture>
+                
                     <!-- Mobile First -->
                     <source
                         srcset="
-                            ./img/smartphone/FRUTA.jpg    1x,
+                            ./img/smartphone/FRUTA.jpg 1x,
                             ./img/smartphone/FRUTA@2x.jpg 2x,
                             ./img/smartphone/FRUTA@3x.jpg 3x
                         "
-                        media="(min-width:320px) and (orientation:portrait)"
+                        media="(min-width:300px) and (max-width:740px) and (orientation:portrait)"
                     />
                     <!-- Desktop -->
                     <source
                         srcset="
-                            ./img/desktop/FRUTA.jpp 1x,
+                            ./img/desktop/FRUTA.jpg 1x,
                             ./img/desktop/FRUTA@2x.jpg 2x,
                            
                         "
-                        media="(min-width:1000px)"
+                        media="(min-width:1200px)"
                     />
-                    <img  src="" alt="fruta" />
+                    <img  class="contenedor__fruta__dos" src="" alt="fruta"/>
                 </picture>
-            <!-- </section> -->
-        </section>
-<p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perferendis autem exercitationem molestias quaerat, cumque sequi adipisci. Consequuntur, harum deleniti.</p>
+            
+        
+<p class="contenedor__parrafo">Lorem it consectetur adipisicing elit. Minus perferendis autem exercitationem molestias quaerat, cumque sequi adipisci. Consequuntur, harum deleniti.</p>
 
-<a class="btnLeer" href="">Leer más</a>
+<a class="contenedor__btnleer" href="#">Leer más</a>
 
            
         </div>

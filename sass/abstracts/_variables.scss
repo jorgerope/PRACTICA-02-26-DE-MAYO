@@ -3,8 +3,8 @@
 
 // TIPOGRAFIA
 $fontSize: 16px;
-$fontFamily: "", sans-serif;
-$fontFamily-bold: "", sans-serif;
+$fontFamily: "roboto", sans-serif;
+$fontFamily-bold: "roboto-bold", sans-serif;
 
 // COLORES
 $colores: (
@@ -12,7 +12,7 @@ $colores: (
     blanco: #F5F5F5,
     gris:#C4C4C4,
     amarillo:#FFF500,
-     
+   fondoMain: #939393,
    gri:#939393
 
 
@@ -27,7 +27,7 @@ $dispositivos: (
 
 $breakpoints: (
     smartphone: 320px,
-    ipad: 768px,
+    ipad: 740px,
     desktop: 1100px
 );
 
@@ -38,10 +38,9 @@ $margenes: (
 
 
 $boton: (
-bgcolor:#FFF500,
+     bgcolor:#FFF500,
     color:black,
-    
-    padding: 1rem,
+    padding: 1rem .875rem,
     width: 118px,
     border-radius:20px
 

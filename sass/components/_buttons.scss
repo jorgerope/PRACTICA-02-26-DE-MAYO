@@ -1,10 +1,15 @@
 /* @BOTONES */
 /* ********** */
 
-.btnLeer{
+.contenedor{
 
-    background-color: map-get($boton,bgcolor);
-    color: map-get($boton,color);
-    border-radius: map-get($boton,border-radius);
-    padding: map-get($boton,padding);
+&__btnleer{
+
+    background-color: map-get($boton, bgcolor);
+    color: map-get($boton, color);
+    border-radius: map-get($boton, border-radius);
+    padding: map-get($boton, padding);
+    width: map-get($boton , width );
+}
+
 }

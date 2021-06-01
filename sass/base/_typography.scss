@@ -3,9 +3,9 @@
 
 // FONT-FACE
 @font-face {
-    font-family: "";
-    src:    url(../../font/.woff2) format("woff2"),
-            url(../../font/.woff) format("woff");
+    font-family: "roboto";
+    src:    url(../font/.woff2) format("woff2"),
+            url(../font/.woff) format("woff");
 }
 
 html{
@@ -15,15 +15,3 @@ html{
 }
 
 // Clases Tipográficas
-.titulo{
-
-}
-.subtitulo{
-
-}
-.parrafo{
-
-}
-.copy{
-
-}

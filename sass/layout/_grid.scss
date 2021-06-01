@@ -3,91 +3,172 @@
 
 // Grids que unifican Figma con Sass
 
-    // Grid para Smartphone
-    @media only screen and (min-width: map-get($breakpoints, smartphone)) and (orientation: portrait) {
-        
-    }
+// Grid para Smartphone
+@media only screen and (min-width: map-get($breakpoints, smartphone)) and (orientation: portrait) {
 
-    header{
-        padding: 16px;
-    }
-main{
+header{
+    padding: 10px;
+}
 
-    background-color: map-get($colores, gri );
+.contenedor {
+    display: grid;    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-column-gap: 16px;
     border-radius: 30px;
-    padding: 0 0 0 16px;
-}
-   
+    background-color: map-get($colores, fondoMain );
+    // grid-row-gap: 16px;
+    padding: 10px 16px ;
+    align-content: space-evenly;
+    // justify-content: center;
+        
+    &__titulo {
+        grid-column:1/ span 3;
+        grid-row: 1 / span 1;
+    }
     
-    .main{
+    &__presentacion {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 1;
+    }
+    
+    &__trigo {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 1;
 
+    }
+
+    &__fruta {
+        grid-column: 4 / span 3;
+        grid-row: 3 / span 1;
+
+    }
+    &__parrafo {
+        grid-column: 1 / span 4;
+        grid-row: 4 / span 1;
+    }
+
+    
+    &__btnleer {
+        grid-column: 4 / span 1;
+        grid-row: 5;
+        justify-self: center;
+        
+    }
+}
+}
+
+
+// Grid para iPad
+@media only screen and (min-width: map-get($breakpoints, ipad)) and (orientation: portrait) {
+    .main {
+        padding: 0 24px;
         display: grid;
-
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5,auto);
-        grid-column-gap: 16px;
-    
-    
-        
-        
+        grid-template-columns: repeat(8, 1fr);
+        grid-column-gap: 24px;
     }
-            .titulo{
-              
-                grid-column: 1/ span-1;
-                grid-row: 1 / 1;
-            }
+}
+
+// Grid para Desktop
+@media only screen and (min-width: map-get($breakpoints, desktop)) {
+    header {
+        padding: 11px;
+    }
     
-.presentacion{
+    
+main {
+      
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;    
+    border-radius: 30px;
+    
+
+    &::before{
+        grid-column: 1/span 3;
+        justify-self: end;
+        align-self: center;
+        content: "";
+        display: inline-block;
+        width: 225px;
+        height: 250px;
+        background: url("../../img/desktop/CARTA.svg");
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &::after{
+        grid-column: 10/span 3;
+        align-self: center;
+        content: "";
+        display: inline-block;
+        width: 168.75px;
+        height: 262.5px;
+        background: url("../../img/desktop/TENEDOR.svg");
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+
+
+    .contenedor{
+        // padding: 24px 0;
+        grid-column: 4 / span 6;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 24px;
+        padding: 16px;
+        border-radius: 30px;
+        background-color: map-get($colores, fondoMain);
+    
+    &__titulo {
+        grid-column:1 / span 2;
+        grid-row: 1 / span 1;
+    }
+    
+    &__presentacion {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 1;
+
+    }
    
-    grid-column: 1/ span 3;
-    grid-row: 2 /span 1;
 
-}
-
-
-.trigo{
-    
-    grid-column: 1/ span 2;
-    grid-row:3 /span 1;
-}
-
-.fruta{
-    grid-column:3/ span 2;
-    grid-row: 3 /span 1;
-}
-
-.parrafo{
-    
-    grid-column: 1/ span 4;
-    grid-row: 4 /span 1;
-
-}
-
-.boton{
-    
-    grid-column: 4/ span 1;
-    grid-row: 5 /span 2;
   
-
-}
-
-    // Grid para iPad
-    @media only screen and (min-width: map-get($breakpoints, ipad)) and (orientation: portrait) {
-        .contenedor {
-            padding: 0 24px;
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            grid-column-gap: 24px;
+    &__trigo {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+        &__uno{
+            width: 100%;
         }
     }
 
-    // Grid para Desktop
-    @media only screen and (min-width: map-get($breakpoints, desktop)) {
-        .contenedor {
-            padding: 0 24px;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-column-gap: 24px;
+    &__fruta {
+        grid-column: 4 / span 3;
+        grid-row: 3;
+        &__dos{ 
+            width: 100%;
         }
+
     }
+    &__parrafo {
+        grid-column: 1 / span 6;
+        grid-row: 4;
+    }
+    
+
+    &__btnleer {
+        grid-column: 5 / span 2;
+        grid-row: 5;
+        justify-self: center;
+    }
+    }
+}}
+
+
+
+/*HEADER */
+/*******/
 
